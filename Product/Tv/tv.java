@@ -3,12 +3,12 @@ package Product.Tv;
 import Product.product;
 
 public class tv {
-    public void tvData()
+    public void tvMenu()
     {
-        product p = new product();
-        for (int i =0;i<p.tv_product.length;i++)
-        {
-            System.out.print(p.tv_product[i] +"\t\t");
-        }
+        System.out.println("TELEVISION MENU");
+        System.out.println("1. Samsung");
+        System.out.println("2. Sony");
+        System.out.println("3. LG");
+        System.out.println("Enter your choice : ");
     }
 }
