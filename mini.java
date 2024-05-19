@@ -41,15 +41,10 @@ public class mini {
         // String things = scan.nextLine();
         // System.out.println("You chose " +things + ". Do you wish to Continue(y/n) : ");
         // String choice = scan.nextLine();
-        // if (choice == "y")
-        // {
-        //     // do nothing
-        // }
-        // else if(choice == "n")
-        // {
-        //     return;
-        // }
-        product p = new product();
-        p.productMenu();
+        // 
+    
+        bill b = new bill();
+        b.bill();
+
     }
 }

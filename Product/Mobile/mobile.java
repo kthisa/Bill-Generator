@@ -36,17 +36,8 @@ public class mobile {
                 System.out.println("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = oneplus_phone[option-1];
+                price = oneplus_price[option-1];
                 System.out.println("The Cost of "+oneplus_phone[option-1] + " is " + "Rs. "+oneplus_price[option-1]);
-                System.out.println("Do you wish to Proceed (y/n): ");
-                option2 = scan.nextLine();
-                if (option2 == "y")
-                {
-                    price = oneplus_price[option-1];   
-                }
-                else if(option2 == "n")
-                {
-                 return;
-                }
                 break;
             case 2:
                 brand = "Vivo";
@@ -58,17 +49,8 @@ public class mobile {
                 System.out.println("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = vivo_phone[option-1];
+                price = vivo_price[option -1];
                 System.out.println("The Cost of "+vivo_phone[option-1] + " is " + "Rs. "+vivo_price[option-1]);
-                System.out.print("Do you wish to Proceed (y/n): ");
-                option2= scan.next();
-                if (option2 == "y")
-                {
-                    price = vivo_price[option-1];   
-                }
-                else if(option2 == "n")
-                {
-                 return;
-                }
                 break;
             case 3:
                 brand = "Oppo";
@@ -80,21 +62,11 @@ public class mobile {
                 System.out.println("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = oppo_phone[option-1];
+                price = oppo_price[option-1];
                 System.out.println("The Cost of "+oppo_phone[option-1] + " is " + "Rs. "+oppo_price[option-1]);
-                System.out.println("Do you wish to Proceed (y/n): ");
-                option2 = scan.nextLine();
-                if (option2 == "y")
-                {
-                    price = oppo_price[option-1];   
-                }
-                else if(option2 == "n")
-                {
-                 return;
-                }
                 break;
             default:
                 break;
-        }
-        System.out.println("Enter your choice : ");
+            }
     }
 }

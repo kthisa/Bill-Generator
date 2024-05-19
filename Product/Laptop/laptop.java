@@ -7,9 +7,15 @@ import Product.product;
 public class laptop {
     public String acer_avail []= {"Swift 3","Swift Go 14","Swift Go 16"};
     public int acer_price [] = {80000, 75000,92000};
+    public String hp_avail [] = {"HP Pavilion","HP Victus","HP Omen"};
+    public int hp_price [] = { 70000,80000,85000};
+    public String del_avail [] = {"del 2","del 1","del 3"};
+    public int del_price [] = {80000,85000,79000};
     public String brand;
     public String model;
     public int price;
+    public int option;
+    public String option2;
     public void laptopMenu()
         {
             System.out.println("LAPTOP MENU");
@@ -25,31 +31,42 @@ public class laptop {
                 {
                     System.out.println(i+1+" "+acer_avail[i]);
                 }
-                // System.out.println("Please Enter Your Choice: ");
-                // int option = scan.nextInt();
-                // model = oneplus_phone[option-1];
-                // System.out.println("The Cost of "+oneplus_phone[option-1] + "is " + "Rs. "+oneplus_price[option-1]);
-                // System.out.println("Do you wish to Proceed (y/n): ");
-                // String option2 = scan.nextLine();
-                // if (option2 == "y")
-                // {
-                //     price = oneplus_price[option-1];   
-                // }
-                // else if(option2 == "n")
-                {
-                 return;
-                }
-                
-                
+                System.out.println("Please Enter Your Choice: ");
+                int option = scan.nextInt();
+                System.out.println("Please Enter Your Choice: ");
+                option = scan.nextInt();
+                model = acer_avail[option-1];
+                price = acer_price[option-1];
+                System.out.println("The Cost of "+acer_avail[option-1] + " is " + "Rs. "+acer_price[option-1]);
+                break;
             case 2:
-            // do nothing
-            break;
+                brand = "Hp";
+                System.out.println("Available Laptops : ");
+                for(int i = 0;i < hp_avail.length;i++)
+                {
+                    System.out.println(i+1+" "+hp_avail[i]);
+                }
+                System.out.println("Please Enter Your Choice: ");
+                option = scan.nextInt();
+                model = hp_avail[option-1];
+                price = hp_price[option -1];
+                System.out.println("The Cost of "+hp_avail[option-1] + " is " + "Rs. "+hp_price[option-1]);
+                break;
             case 3:
-            // do 
-            break;
+                brand = "Dell";
+                System.out.println("Available Laptops : ");
+                for(int i = 0;i < del_avail.length;i++)
+                {
+                    System.out.println(i+1+" "+del_avail[i]);
+                }
+                System.out.println("Please Enter Your Choice: ");
+                option = scan.nextInt();
+                model = del_avail[option-1];
+                price = del_price[option-1];
+                System.out.println("The Cost of "+del_avail[option-1] + " is " + "Rs. "+del_price[option-1]);
+                break;
             default:
                 break;
-        }
-            System.out.print("Enter your choice : ");
+            }
         }
 }
