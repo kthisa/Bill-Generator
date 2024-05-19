@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import Product.Laptop.laptop;
 import Product.Mobile.mobile;
+import Product.Tv.tv;
 
 public class product {
 //    public String products[] = { "Mobile","TV","Laptop"};
@@ -27,8 +28,8 @@ public class product {
                 m.mobileMenu();
                 break;
             case 2:
-                // tv t = new tv();
-                // t.tvMenu();
+                tv t = new tv();
+                t.tvMenu();
                 break;
             case 3:
                 laptop l = new laptop();
