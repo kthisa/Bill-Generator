@@ -7,6 +7,13 @@ import Product.product;
 public class mobile {
     public String oneplus_phone []= {"Oneplus Nord","Oneplus 7T","Oneplus Nord2"};
     public int oneplus_price [] = {30000, 35000,42000};
+    public String vivo_phone []= {"Vivo Y12","Vivo Y13","Vivo Y14"};
+    public int vivo_price [] = {31000, 36000,41000};
+    public String oppo_phone []= {"Oppo Reno 10","Oppo Reno 11 ","Oppo Reno 12"};
+    public int oppo_price [] = {32000, 37000,43000};
+    public String brand;
+    public String model;
+    public int price;
     public void mobileMenu()
     {
         System.out.println("MOBILE MENU");
@@ -18,18 +25,52 @@ public class mobile {
         int choice = scan.nextInt();
         switch (choice) {
             case 1:
+                brand = "Oneplus";
                 System.out.println("Available Phones : ");
-                for(int i =0;i < oneplus_phone.length;i++)
+                for(int i = 0;i < oneplus_phone.length;i++)
                 {
                     System.out.println(i+1+" "+oneplus_phone[i]);
                 }
+                System.out.println("Please Enter Your Choice: ");
+                int option = scan.nextInt();
+                model = oneplus_phone[option-1];
+                System.out.println("The Cost of "+oneplus_phone[option-1] + "is " + "Rs. "+oneplus_price[option-1]);
+                System.out.println("Do you wish to Proceed (y/n): ");
+                String option2 = scan.nextLine();
+                if (option2 == "y")
+                {
+                    price = oneplus_price[option-1];   
+                }
+                else if(option2 == "n")
+                {
+                 return;
+                }
                 break;
             case 2:
-            // do nothing
-            break;
+                brand = "Vivo";
+                System.out.println("Available Phones : ");
+                for(int i = 0;i < vivo_phone.length;i++)
+                {
+                    System.out.println(i+1+" "+vivo_phone[i]);
+                }
+                System.out.println("Please Enter Your Choice: ");
+                int option = scan.nextInt();
+                model = vivo_phone[option-1];
+                System.out.println("The Cost of "+vivo_phone[option-1] + "is " + "Rs. "+vivo_price[option-1]);
+                System.out.println("Do you wish to Proceed (y/n): ");
+                String option2 = scan.nextLine();
+                if (option2 == "y")
+                {
+                    price = vivo_price[option-1];   
+                }
+                else if(option2 == "n")
+                {
+                 return;
+                }
+                break;
             case 3:
-            // do 
-            break;
+                brand = "Oppo";
+                break;
             default:
                 break;
         }
