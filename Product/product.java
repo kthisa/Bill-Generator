@@ -14,11 +14,13 @@ public class product {
     public float finalPrice;
     public void productMenu()
     {
+        System.out.println(" ");
         System.out.println("PRODUCT MENU");
-        System.out.println("1. Mobile");
-        System.out.println("2. TV");
-        System.out.println("3. Laptop");
-        System.out.println("Please Enter Your Choice : ");
+        System.out.println(" ");
+        System.out.print("1. Mobile \t");
+        System.out.print("\t 2. TV \t");
+        System.out.println("\t 3. Laptop \t");
+        System.out.print("Please Enter Your Choice : ");
         Scanner scan = new Scanner(System.in);
         int choice = scan.nextInt();
         switch (choice) {
@@ -46,6 +48,7 @@ public class product {
             default:
                 break;
         }
+        System.out.println(" ");
         System.out.println("-----" +brand+ "-----");
         System.out.println("Brand Name \t: "+brand);
         System.out.println("Model Name \t: "+model);
@@ -54,6 +57,9 @@ public class product {
         float discount_amount = (price)*(discount/100);
         System.out.println("Discount Amount : "+discount_amount);
         finalPrice = price - discount_amount;
+        System.out.println(" ----------------------------- ");
         System.out.println("Final Price \t: "+finalPrice);
+        System.out.println(" ----------------------------- ");
+        
     }
 }

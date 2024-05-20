@@ -18,51 +18,60 @@ public class tv {
     public String option2;
     public void tvMenu()
     {
-        System.out.println("TELEVISION MENU");
+        System.out.println(" ");
+        System.out.println("-------   TELEVISION MENU   --------");
         System.out.println("1. Samsung");
         System.out.println("2. Sony");
         System.out.println("3. LG");
-        System.out.println("Please Enter Your Choice: ");
+        System.out.print("Please Enter Your Choice: ");
+        System.out.println(" ");
         Scanner scan = new Scanner(System.in);
         int choice = scan.nextInt();
         switch (choice) {
             case 1:
                 brand = "Samsung";
-                System.out.println("Available Televisions : ");
+                System.out.println(" ");
+                System.out.println("-----  Available Televisions  ------");
                 for(int i =0;i < samsung_tv.length;i++)
                 {
                     System.out.println(i+1+" "+samsung_tv[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.println(" ");
+                System.out.print("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = samsung_tv[option-1];
                 price = samsung_price[option-1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+samsung_tv[option-1] + " is " + "Rs. "+samsung_price[option-1]);
                 break;
             case 2:
                 brand = "Sony";
-                System.out.println("Available Televisions : ");
+                System.out.println(" ");
+                System.out.println("-----  Available Televisions  ----- ");
                 for(int i = 0;i < sony_tv.length;i++)
                 {
                     System.out.println(i+1+" "+sony_tv[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.print("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = sony_tv[option-1];
                 price = sony_price[option -1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+sony_tv[option-1] + " is " + "Rs. "+sony_price[option-1]);
                 break;
             case 3:
                 brand = "LG";
-                System.out.println("Available Television : ");
+                System.out.println(" ");
+                System.out.println("-----  Available Television  ------");
                 for(int i = 0;i < lg_tv.length;i++)
                 {
                     System.out.println(i+1+" "+lg_tv[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.print("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = lg_tv[option-1];
                 price = lg_price[option-1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+lg_tv[option-1] + " is " + "Rs. "+lg_price[option-1]);        
                 break;
             default:

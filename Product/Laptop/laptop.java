@@ -18,10 +18,13 @@ public class laptop {
     public String option2;
     public void laptopMenu()
         {
+            System.out.println(" ");
             System.out.println("LAPTOP MENU");
             System.out.println("1. Acer");
             System.out.println("2. HP");
             System.out.println("3. Dell");
+            System.out.print("Please Enter Your Choice: ");
+            System.out.println(" ");
             Scanner scan = new Scanner(System.in);
             int choice = scan.nextInt();
             switch (choice) {
@@ -31,12 +34,13 @@ public class laptop {
                 {
                     System.out.println(i+1+" "+acer_avail[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.println(" ");
+                System.out.print("Please Enter Your Choice: ");
                 int option = scan.nextInt();
-                System.out.println("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = acer_avail[option-1];
                 price = acer_price[option-1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+acer_avail[option-1] + " is " + "Rs. "+acer_price[option-1]);
                 break;
             case 2:
@@ -46,10 +50,11 @@ public class laptop {
                 {
                     System.out.println(i+1+" "+hp_avail[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.print("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = hp_avail[option-1];
                 price = hp_price[option -1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+hp_avail[option-1] + " is " + "Rs. "+hp_price[option-1]);
                 break;
             case 3:
@@ -59,10 +64,11 @@ public class laptop {
                 {
                     System.out.println(i+1+" "+del_avail[i]);
                 }
-                System.out.println("Please Enter Your Choice: ");
+                System.out.print("Please Enter Your Choice: ");
                 option = scan.nextInt();
                 model = del_avail[option-1];
                 price = del_price[option-1];
+                System.out.println(" ");
                 System.out.println("The Cost of "+del_avail[option-1] + " is " + "Rs. "+del_price[option-1]);
                 break;
             default:
